@@ -1,10 +1,12 @@
 import React from 'react'
-import './App.css'
+import {Route, Switch, BrowserRouter} from 'react-router-dom'
+
 import Header from '../Header/Header'
 import List from '../List/List';
-import {Route, Switch, BrowserRouter} from 'react-router-dom'
 import NotFound from '../NotFound/NotFound'
 import Detail from '../Detail/Detail'
+
+import './App.css'
 
 const App = () =>  {
   return (

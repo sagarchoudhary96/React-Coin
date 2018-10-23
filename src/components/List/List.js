@@ -1,6 +1,8 @@
 import React, {Component} from 'react'
+
 import {handleResponse} from '../../utils/helpers'
 import {API_URL} from '../../utils/api'
+
 import Loader from '../Loader/Loader'
 import Table from '../Table/Table'
 import Pagination from '../Pagination/Pagination'
@@ -20,17 +22,6 @@ export default class List extends Component {
 
     componentDidMount() {
         this.fetchCurrencies()
-    }
-
-    // render arrow
-    renderChangeArrow (percent) {
-        if (percent > 0) {
-            return <span className="percent-raised">{percent}% &uarr;</span>  
-        } else if (percent < 0) {
-            return <span className="percent-fallen">{percent}% &darr;</span>  
-        } else {
-            return <span>{percent}</span>
-        }
     }
 
     // Handle Pagination
@@ -76,7 +67,7 @@ export default class List extends Component {
 
         return(
             <div>
-                <Table currencies={currencies} renderChangeArrow={this.renderChangeArrow}/>
+                <Table currencies={currencies}/>
                 <Pagination page={page} totalPages={totalPages} handlePagination={this.handlePagination}/>
             </div>
         )
