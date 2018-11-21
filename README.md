@@ -11,7 +11,8 @@ A React App that gives live information about cryptocurrencies implementing basi
 ## How to run:
 1. [Download](https://github.com/sagarchoudhary96/React-Coin/archive/master.zip) or [Clone](https://github.com/sagarchoudhary96/React-Coin.git) the Repository.
 2. `cd` into the project directory and run `yarn install` to install the project dependencies.
-3. App can be seen at: `localhost:3000`
+3. Run `yarn start` to start the app.
+4. App can be seen at: `localhost:3000`.
 
 * The info about the **API** used in this project can be found [here.](https://udilia.com/docs/cryptocurrencies/v1)
 
